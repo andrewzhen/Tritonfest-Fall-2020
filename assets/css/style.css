@@ -148,25 +148,25 @@ table {
 /************************************ FONT ***********************************/
 @font-face {
   font-family: "Volaroid Sans";
-  src: url('/assets/fonts/Volaroid-Sans.woff2') format('woff2'),
-       url('/assets/fonts/Volaroid-Sans.woff') format('woff'),
-       url('/assets/fonts/Volaroid-Sans.ttf') format('ttf');
+  src: url('../fonts/Volaroid-Sans.woff2') format('woff2'),
+       url('../fonts/Volaroid-Sans.woff') format('woff'),
+       url('../fonts/Volaroid-Sans.ttf') format('ttf');
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url('/assets/fonts/Gotham-Rounded-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Gotham-Rounded-Bold.woff') format('woff'),
-       url('/assets/fonts/Gotham-Rounded-Bold.ttf') format('ttf');
+  src: url('../fonts/Gotham-Rounded-Bold.woff2') format('woff2'),
+       url('../fonts/Gotham-Rounded-Bold.woff') format('woff'),
+       url('../fonts/Gotham-Rounded-Bold.ttf') format('ttf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url('/assets/fonts/Gotham-Rounded-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Gotham-Rounded-Medium.woff') format('woff'),
-       url('/assets/fonts/Gotham-Rounded-Medium.ttf') format('ttf');
+  src: url('../fonts/Gotham-Rounded-Medium.woff2') format('woff2'),
+       url('../fonts/Gotham-Rounded-Medium.woff') format('woff'),
+       url('../fonts/Gotham-Rounded-Medium.ttf') format('ttf');
   font-weight: 600;
 }
 
@@ -488,7 +488,7 @@ header div:nth-child(odd) {
   "event1 event2 event3 event4"
   "drawer drawer drawer drawer";
   grid-gap: 0 1vw;
-  margin: var(--gap) 0;
+  margin: var(--gap);
 }
 
 #first-event-row #event1 { grid-area: event1; }
@@ -507,7 +507,7 @@ header div:nth-child(odd) {
   "event5 sponsors event6"
   "drawer drawer drawer";
   grid-gap: 0 1vw;
-  margin: calc(2 * var(--gap)) 0 var(--gap);
+  margin: calc(2 * var(--gap)) var(--gap) var(--gap);
 }
 
 #second-event-row #event5 { grid-area: event5; }
